@@ -26,7 +26,7 @@ function TakeSnapshot()
 
 console.log('ml5 version', ml5.version);
 
-classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/FX-4Ho24g/model.json', modelLoaded);
+Classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/FX-4Ho24g/model.json', modelLoaded);
 
 function modelLoaded()
 {
@@ -44,11 +44,11 @@ function speak()
 
 }
 
-function check()
+function Check()
 {
     img = document.getElementById('captured_image');
 
-    classifier.classify(img, gotresult);
+    Classifier.classify(img, gotresult);
 
 }
 
